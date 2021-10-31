@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Signin</a>
+        </li>
+      </ul>
+      <div class="d-flex justify-content-center my-5">
+        <form action="php/signup.php" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              name="name"
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="joe..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+              required
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              name="password"
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="confirm_password">confirm password</label>
+            <input
+              name="confirm_password"
+              type="password"
+              class="form-control"
+              id="confirm_password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <span id="message"></span>
+          <br />
+          <button
+            type="submit"
+            id="submit"
+            name="submit"
+            disabled
+            class="btn btn-primary"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/password.js"></script>
+  </body>
+</html>
